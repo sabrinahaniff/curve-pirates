@@ -19,7 +19,7 @@ Each level is a standalone interactive module:
 
 ## The math
 
-All ECC operations are implemented from scratch in `src/utils/ecc.js` — no crypto libraries. This is intentional: reading the source is part of the learning.
+All ECC operations are implemented from scratch in `src/utils/ecc.js`, no crypto libraries. 
 
 Covers:
 - Real-number point addition and doubling
@@ -52,4 +52,4 @@ Or push to GitHub and connect the repo on [vercel.com](https://vercel.com).
 
 ---
 
-Built as a study tool for CIS4520 (Introduction to Cryptography).
+Mainly built for my understanding for ECC.

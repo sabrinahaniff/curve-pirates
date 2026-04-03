@@ -67,7 +67,7 @@ export default function Level4() {
 
   // Bit size comparison
   const realBits = 256;
-  const realOps = '2^128'; // BSGS complexity ~sqrt(n)
+  const realOps = '2^128'; // BSGS complexity ,sqrt(n)
 
   return (
     <LevelLayout

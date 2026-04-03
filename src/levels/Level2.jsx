@@ -83,7 +83,7 @@ export default function Level2() {
       drawPoint(ctx, srx2, sry2, '#2ecc71', 'R', 8);
     }
 
-    // P and Q
+    // P & Q
     const [spx, spy] = toScreen(px, py);
     const [sqx, sqy] = toScreen(qx, qy);
     drawPoint(ctx, spx, spy, '#e74c3c', 'P', 8);
