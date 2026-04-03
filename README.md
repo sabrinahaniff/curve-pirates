@@ -1,6 +1,7 @@
-# ☠ Curve Pirates
+# Curve Pirates
 
 > An interactive ECC (Elliptic Curve Cryptography) playground disguised as a pirate game.
+<img width="1467" height="806" alt="image" src="https://github.com/user-attachments/assets/04635eec-a9ce-4303-a3f8-98883b6fef4b" />
 
 Live at: [curve-pirates.vercel.app](https://curve-pirates.vercel.app) *(deploy to update)*
 
@@ -16,6 +17,12 @@ Each level is a standalone interactive module:
 | 4 | Discrete Log | Brute-force attack a toy curve, feel the wall |
 | 5 | ECDH | Step through a full key exchange, adjust both parties |
 | 6 | ECDSA | Sign messages, tamper with them, watch verification fail |
+
+<img width="1457" height="801" alt="image" src="https://github.com/user-attachments/assets/349d0e84-64ba-4d57-bc87-1535de50fde1" />
+<img width="1465" height="808" alt="image" src="https://github.com/user-attachments/assets/6069f8b1-dfa0-42f3-8304-02dffbe4344f" />
+<img width="1457" height="793" alt="image" src="https://github.com/user-attachments/assets/5368d4a3-4bec-4a01-9ae7-c408449af0dc" />
+
+
 
 ## The math
 
