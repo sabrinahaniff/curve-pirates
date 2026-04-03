@@ -67,7 +67,7 @@ export default function Level6() {
                 <Stat label="Hash h(m)" value={h} color="#3498db" />
                 <Stat label="r = (k·G).x mod n" value={r} color="#e74c3c" />
                 <Stat label="s = k⁻¹(h + dr) mod n" value={s} color="#e74c3c" />
-                <Stat label="Signature" value={s > 0 ? `(${r}, ${s})` : '—'} color="var(--gold)" />
+                <Stat label="Signature" value={s > 0 ? `(${r}, ${s})` : '-'} color="var(--gold)" />
               </div>
             </div>
           </div>
@@ -112,8 +112,8 @@ export default function Level6() {
                 textAlign: 'center',
               }}>
                 {valid
-                  ? '✓ VALID SIGNATURE — message is authentic'
-                  : '✗ INVALID SIGNATURE — message was tampered or wrong key'}
+                  ? '✓ VALID SIGNATURE - message is authentic'
+                  : '✗ INVALID SIGNATURE - message was tampered or wrong key'}
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Level6() {
       }
       sideSlot={<>
         <LoreBox>
-          <strong>ECDSA:</strong> Prove you signed a message with your private key. Anyone with your public key can verify — but only you could have produced it.
+          <strong>ECDSA:</strong> Prove you signed a message with your private key. Anyone with your public key can verify - but only you could have produced it.
         </LoreBox>
 
         <div>
@@ -175,7 +175,7 @@ export default function Level6() {
           <div>Pub key Q = {fmt(pubKey)}</div>
         </div>
 
-        <Hint>Toggle "tamper with message" — the verification instantly fails. The signature binds the content, key, and nonce together mathematically.</Hint>
+        <Hint>Toggle "tamper with message" - the verification instantly fails. The signature binds the content, key, and nonce together mathematically.</Hint>
       </>}
     />
   );

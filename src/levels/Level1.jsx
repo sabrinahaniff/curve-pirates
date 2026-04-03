@@ -94,7 +94,7 @@ export default function Level1() {
           }}>
             Δ = -16(4a³ + 27b²) = {disc.toFixed(0)}<br />
             <span style={{ fontSize: 11, opacity: 0.8 }}>
-              {smooth ? '✓ Non-singular — valid for ECC' : '✗ Singular curve — NOT valid for crypto!'}
+              {smooth ? '✓ Non-singular, valid for ECC' : '✗ Singular curve, NOT valid for crypto!'}
             </span>
           </div>
         </div>
@@ -110,7 +110,7 @@ export default function Level1() {
         </div>
 
         <Hint>
-          Try dragging <strong>a</strong> to −4 and <strong>b</strong> to 0 to see the curve split into two components. When Δ = 0, the curve degenerates — game over for crypto.
+          Try dragging <strong>a</strong> to −4 and <strong>b</strong> to 0 to see the curve split into two components. When Δ = 0, the curve degenerates: game over for crypto.
         </Hint>
       </>}
     />

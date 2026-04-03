@@ -76,8 +76,8 @@ export default function Level4() {
           <div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 13, color: 'var(--gold)', letterSpacing: 1, marginBottom: 16 }}>THE DISCRETE LOG PROBLEM</div>
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: 22, color: 'var(--parchment)', lineHeight: 2 }}>
-              <div>G = <span style={{ color: '#e8c87a' }}>{G ? `(${G[0]}, ${G[1]})` : '—'}</span></div>
-              <div>Public key = k·G = <span style={{ color: '#2ecc71' }}>{publicKey ? `(${publicKey[0]}, ${publicKey[1]})` : '—'}</span></div>
+              <div>G = <span style={{ color: '#e8c87a' }}>{G ? `(${G[0]}, ${G[1]})` : '-'}</span></div>
+              <div>Public key = k·G = <span style={{ color: '#2ecc71' }}>{publicKey ? `(${publicKey[0]}, ${publicKey[1]})` : '-'}</span></div>
               <div style={{ color: 'var(--ink-muted)' }}>Find k = <span style={{ color: found ? '#2ecc71' : '#e74c3c' }}>???</span></div>
             </div>
           </div>

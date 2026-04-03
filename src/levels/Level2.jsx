@@ -214,7 +214,7 @@ export default function Level2() {
         <div>
           <SectionTitle>Why This Matters</SectionTitle>
           <div style={{ fontSize: 13, color: '#8a9a9a', lineHeight: 1.6 }}>
-            This rule makes the curve a <em style={{ color: 'var(--parchment)' }}>group</em> — closed, associative, has identity, has inverses. That group structure is the entire foundation of ECC.
+            This rule makes the curve a <em style={{ color: 'var(--parchment)' }}>group</em>  closed, associative, has identity, has inverses. That group structure is the entire foundation of ECC.
           </div>
         </div>
 

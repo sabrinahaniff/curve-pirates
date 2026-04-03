@@ -166,7 +166,7 @@ export default function Level3() {
         <div>
           <SectionTitle>Result</SectionTitle>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, fontFamily: 'var(--font-mono)', fontSize: 13 }}>
-            <div>G = <span style={{ color: '#e8c87a' }}>{G ? `(${G[0]}, ${G[1]})` : '—'}</span></div>
+            <div>G = <span style={{ color: '#e8c87a' }}>{G ? `(${G[0]}, ${G[1]})` : '-'}</span></div>
             <div>{k}·G = <span style={{ color: '#2ecc71' }}>{kG ? `(${kG[0]}, ${kG[1]})` : '∞'}</span></div>
             <div style={{ color: 'var(--ink-muted)', fontSize: 11 }}>Order of G = {order ?? '?'}</div>
           </div>
@@ -188,7 +188,7 @@ export default function Level3() {
           <label htmlFor="trail" style={{ fontSize: 13, cursor: 'pointer', color: '#8a9a9a' }}>Show trail</label>
         </div>
 
-        <Hint>The yellow dot is G. The green dot is k·G. Try setting k equal to the order — you get back the point at infinity!</Hint>
+        <Hint>The yellow dot is G. The green dot is k·G. Try setting k equal to the order - you get back the point at infinity!</Hint>
       </>}
     />
   );

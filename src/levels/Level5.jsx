@@ -38,7 +38,7 @@ export default function Level5() {
     },
     {
       title: 'Alice publishes A = a·G',
-      desc: 'Alice computes her public key and publishes it. Safe — reversing it requires solving ECDLP.',
+      desc: 'Alice computes her public key and publishes it. Safe, reversing it requires solving ECDLP.',
       highlight: 'alice-pub',
     },
     {
@@ -121,7 +121,7 @@ export default function Level5() {
                 ab·G = {fmt(aliceShared)}
               </div>
               <div style={{ fontSize: 13, color: '#6a8a6a', marginTop: 6 }}>
-                An eavesdropper sees G, A, B — but can't compute the shared secret without solving ECDLP.
+                An eavesdropper sees G, A, B but can't compute the shared secret without solving ECDLP.
               </div>
             </div>
           )}
@@ -175,7 +175,7 @@ export default function Level5() {
           </div>
         </div>
 
-        <Hint>Change Alice or Bob's private key — the shared secret updates automatically. Both always agree.</Hint>
+        <Hint>Change Alice or Bob's private key, the shared secret updates automatically. Both always agree.</Hint>
       </>}
     />
   );
