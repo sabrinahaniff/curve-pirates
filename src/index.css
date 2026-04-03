@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --gold:        #c8a84b;
+  --gold-light:  #e8c87a;
+  --gold-dim:    rgba(200, 168, 75, 0.3);
+  --parchment:   #f5eed8;
+  --parchment-d: #ede4c8;
+  --ink:         #2a1e0e;
+  --ink-mid:     #3d2e1a;
+  --ink-muted:   #6a5a40;
+  --sea:         #0d1f2d;
+  --sea-card:    #112233;
+  --sea-mid:     #1a3a4a;
+  --sea-light:   #2a5a74;
+  --sea-border:  rgba(200,168,75,0.2);
+  --red:         #c0392b;
+  --blue:        #2980b9;
+  --green:       #27ae60;
+  --teal:        #1abc9c;
+  --purple:      #8e44ad;
+  --font-display: 'Cinzel', Georgia, serif;
+  --font-body:    'Crimson Pro', Georgia, serif;
+  --font-mono:    'JetBrains Mono', monospace;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; background: var(--sea); color: var(--parchment); font-family: var(--font-body); font-size: 16px; line-height: 1.6; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--sea); }
+::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
+
+.btn { font-family: var(--font-display); font-size: 12px; font-weight: 600; letter-spacing: 0.5px; padding: 8px 18px; border-radius: var(--radius-sm); border: 1.5px solid var(--gold); background: transparent; color: var(--gold); cursor: pointer; transition: background 0.15s, color 0.15s; user-select: none; }
+.btn:hover { background: var(--gold); color: var(--ink); }
+.btn:active { transform: scale(0.97); }
+.btn-sm { padding: 5px 12px; font-size: 11px; }
+.btn-ghost { border-color: var(--sea-border); color: #8a9aaa; }
+.btn-ghost:hover { background: var(--sea-mid); color: var(--parchment); border-color: var(--sea-light); }
+
+.card { background: var(--sea-card); border: 1px solid var(--sea-border); border-radius: var(--radius-md); padding: 16px; }
+.section-title { font-family: var(--font-display); font-size: 10px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-muted); border-bottom: 1px solid var(--gold-dim); padding-bottom: 4px; margin-bottom: 10px; }
+
+input[type=range] { -webkit-appearance: none; appearance: none; height: 4px; background: var(--sea-mid); border-radius: 2px; outline: none; cursor: pointer; width: 100%; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--gold); border: 2px solid var(--sea); cursor: grab; }
+
+.formula { font-family: var(--font-mono); font-size: 12px; background: rgba(0,0,0,0.3); border: 1px solid var(--sea-light); border-radius: var(--radius-sm); padding: 10px 14px; color: #7ac8e8; line-height: 1.9; }
+.formula .hl { color: var(--gold-light); }
+.lore { background: rgba(200,168,75,0.07); border-left: 3px solid var(--gold); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 10px 14px; font-style: italic; font-size: 14px; color: var(--parchment); line-height: 1.55; }
+.lore strong { font-style: normal; color: var(--gold-light); }
+.hint { background: rgba(200,168,75,0.05); border: 1px solid var(--sea-border); border-radius: var(--radius-sm); padding: 9px 12px; font-size: 13px; color: #8a9a8a; line-height: 1.5; }
+.pill { display: inline-flex; align-items: center; gap: 4px; font-family: var(--font-display); font-size: 10px; font-weight: 600; letter-spacing: 0.5px; padding: 3px 10px; border-radius: 20px; }
+.pill-gold { background: rgba(200,168,75,0.15); color: var(--gold); border: 1px solid var(--gold-dim); }
+.pill-green { background: rgba(39,174,96,0.15); color: var(--green); border: 1px solid rgba(39,174,96,0.3); }
+.pill-red { background: rgba(192,57,43,0.15); color: #e74c3c; border: 1px solid rgba(192,57,43,0.3); }
+.pill-blue { background: rgba(41,128,185,0.15); color: #3498db; border: 1px solid rgba(41,128,185,0.3); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+.pulse { animation: pulse 2s ease-in-out infinite; }
