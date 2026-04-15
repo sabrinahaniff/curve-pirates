@@ -1,6 +1,6 @@
 # Curve Pirates
 
-> An interactive ECC (Elliptic Curve Cryptography) playground disguised as a pirate game.
+> An interactive ECC (Elliptic Curve Cryptography) playground disguised as a pirate game. Mainly made for me to understand a visual for ECC while studying for my final exam.
 <img width="1467" height="806" alt="image" src="https://github.com/user-attachments/assets/04635eec-a9ce-4303-a3f8-98883b6fef4b" />
 
 Live at: [curve-pirates.vercel.app](https://curve-pirates.vercel.app) *(deploy to update)*
